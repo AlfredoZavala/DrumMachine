@@ -1,13 +1,72 @@
-body {
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --font-color: #30a2d2;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+
+}
+
+body {
+  background: black;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: monospace;
+}
+
+/* Drum Container -- Display & Buttons */
+
+#drum-machine {
+  
+  border: 10px solid var(--font-color);
+  display: flex;
+  flex-direction: column;
+
+  height: 500px;
+  width: 400px;
+
+  
+}
+
+#display {
+  font-size: 26px;
+  text-align: center;
+  line-height: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  height: 15%;
+  width: 100%;
+  margin: 10px auto;
+  color: var(--font-color);
+  border-bottom: 2px solid var(--font-color);
+}
+
+#pad-container {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin:  auto 0;
+}
+
+.drum-pad {
+  height: 110px;
+  width: 120px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  background: black;
+  color: var(--font-color);
 }
